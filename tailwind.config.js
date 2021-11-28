@@ -12,6 +12,9 @@ module.exports = {
           light: "#FFB443",
           dark: "#B213DA"
         }
+      },
+      borderRadius: {
+        'custom': "14rem"
       }
     },
   },
