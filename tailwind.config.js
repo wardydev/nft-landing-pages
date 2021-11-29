@@ -17,8 +17,9 @@ module.exports = {
         'custom': "14rem"
       },
       height: {
-        hero: '120vh',
-        card: '80vh'
+        hero: '50vh',
+        card: '80vh',
+        cardres: '60vh'
       }
     },
   },
