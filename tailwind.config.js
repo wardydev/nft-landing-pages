@@ -15,6 +15,10 @@ module.exports = {
       },
       borderRadius: {
         'custom': "14rem"
+      },
+      height: {
+        hero: '120vh',
+        card: '80vh'
       }
     },
   },
