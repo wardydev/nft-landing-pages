@@ -22,12 +22,17 @@
             <header class="flex justify-between items-center mb-10 lg:mb-0">
                 <img src="./assets/logos/logo2.png" alt="logo" width="80">
 
-                <div class="flex items-center space-x-6">
+                <div class="hidden lg:flex items-center space-x-6">
                     <a href="#" class="text-gray-200 hover:text-gray-300 text-xl">Location</a>
                     <a href="#" class="text-gray-200 hover:text-gray-300 text-xl">Blogs</a>
                     <a href="#" class="text-gray-200 hover:text-gray-300 text-xl">Testimonials</a>
                     <a href="#" class="text-gray-200 hover:text-gray-300 text-xl">Contact</a>
                 </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-menu h-10 w-10 text-gray-50 block lg:hidden" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+
             </header>
             <!-- hero -->
             <div class="flex flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-between">
@@ -53,6 +58,14 @@
     </section>
     <!-- END HERO SECTION -->
 
+    <!-- RESPONSIVE SIDEBAR -->
+    <section class="h-screen close-menu w-screen fixed top-0 left-0 bg-white z-50 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 absolute top-10 right-10 text-primary-dark" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+    </section>
+    <!-- END RESPONSIVE SIDEBAR -->
+
     <!-- COUNT -->
     <section class="lg:px-32 px-10 py-16 mt-64 lg:mt-0">
         <div class="flex flex-col lg:flex-row justify-center lg:justify-start space-y-20 lg:space-y-0 lg:space-x-36">
@@ -72,7 +85,7 @@
     <section class="px-10 lg:px-32 py-20 lg:py-32">
         <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-20 items-center justify-between">
             <!-- image -->
-            <div class="features-card relative h-cardres lg:h-card w-full lg:w-2/4 bg-gradient-to-br from-secondary-light to-secondary-dark rounded-tr-custom rounded-bl-custom order-2">
+            <div class="features-card relative h-cardres lg:h-card w-full lg:w-2/4 bg-gradient-to-br from-secondary-light to-secondary-dark rounded-tr-custom rounded-bl-custom order-2 lg:order-1">
                 <div class="absolute p-4 lg:h-96 h-72 w-72 lg:w-96  card -right-10 lg:left-10 -top-20">
                     <img src="./assets/images/image-05.jpg" alt="">
                 </div>
@@ -82,7 +95,7 @@
             </div>
 
             <!-- title -->
-            <div class="lg:w-2/4 w-full order-1 mb-40 lg:mb-0">
+            <div class="lg:w-2/4 w-full order-1 lg:order-2 mb-40 lg:mb-0">
                 <h2 class="text-4xl lg:text-6xl font-medium text-gray-800">Save & Secured Payment</h2>
                 <p class="pt-8 pb-6 text-gray-600 text-lg lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                 <button class="py-3 px-12 bg-gradient-to-r from-secondary-light to-secondary-dark text-gray-100 font-medium mt-4 hover:text-gray-200 w-full lg:w-auto">Bid Art</button>
@@ -200,21 +213,21 @@
     <!-- TRUSTED SECTION -->
     <section class="px-10 lg:px-32 py-40 lg:py-32">
         <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-20 items-center justify-between">
-            <!-- image -->
-            <div class="features-card relative h-cardres lg:h-card w-full lg:w-2/4 bg-gradient-to-br from-secondary-light to-secondary-dark rounded-tr-custom rounded-bl-custom order-1 mb-20 lg:mb-0">
-                <div class="absolute p-4 lg:h-96 h-72 w-72 lg:w-96  card -right-10 lg:left-10 -top-20">
-                    <img src="./assets/images/image-05.jpg" alt="">
-                </div>
-                <div class="absolute p-4 h-64 w-64 card -left-10 lg:left-56 bottom-10 z-10">
-                    <img src="./assets/images/image-06.jpg" alt="">
-                </div>
-            </div>
-
             <!-- title -->
-            <div class="lg:w-2/4 w-full order-2 ">
+            <div class="lg:w-2/4 w-full order-2 lg:order-1">
                 <h2 class="text-4xl lg:text-6xl font-medium text-gray-800">Save & Secured Payment</h2>
                 <p class="pt-8 pb-6 text-gray-600 text-lg lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                 <button class="py-3 px-12 bg-gradient-to-r from-secondary-light to-secondary-dark text-gray-100 font-medium mt-4 hover:text-gray-200 w-full lg:w-auto">Bid Art</button>
+            </div>
+
+            <!-- image -->
+            <div class="features-card relative h-cardres lg:h-card w-full lg:w-2/4 bg-gradient-to-br from-secondary-light to-secondary-dark rounded-tr-custom rounded-bl-custom mb-20 lg:mb-0 order-1 lg:order-2">
+                <div class="absolute p-4 lg:h-96 h-72 w-72 lg:w-96  card -right-10 lg:left-10 -top-20">
+                    <img src="./assets/images/image-07.jpg" alt="">
+                </div>
+                <div class="absolute p-4 h-64 w-64 card -left-10 lg:left-56 bottom-10 z-10">
+                    <img src="./assets/images/image-08.jpg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -222,8 +235,8 @@
 
     <!-- NEWSLETTER SECTION -->
     <section class="py-32 px-10 bg-gradient-to-tr from-primary-dark to-primary-light">
-        <div class="lg:text-center w-full lg:w-9/12 mx-auto">
-            <h2 class="text-3xl lg:text-5xl text-gray-50 font-bold mb-6">Subscribe to Our Newsletter For Weekly Article Update.</h2>
+        <div class="text-center w-full lg:w-9/12 mx-auto">
+            <h2 class="text-3xl lg:text-5xl text-gray-50 font-bold mb-6">Subscribe to Our our For Weekly Article Update.</h2>
             <p class="text-xl text-gray-300 lg:px-36">We have NFT-related blog so we can share our thought and rutinity in our blog that updated weekly. We will not spam you, we promise.</p>
 
             <div class="flex flex-col lg:flex-row items-center mt-8 space-x-0 lg:space-x-6 justify-center">
@@ -251,9 +264,10 @@
                 </div>
                 <p class="text-xl text-gray-600 py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, autem!</p>
                 <div class="flex space-x-4 items-center">
-                    <div class="h-10 w-10 bg-red-300 rounded-full"></div>
-                    <div class="h-10 w-10 bg-red-300 rounded-full"></div>
-                    <div class="h-10 w-10 bg-red-300 rounded-full"></div>
+                    <img src="./assets/icons/Facebook.svg" alt="facebook">
+                    <img src="./assets/icons/Instagram.svg" alt="instagram">
+                    <img src="./assets/icons/Twitter.svg" alt="twitter">
+                    <img src="./assets/icons/YouTube.svg" alt="youtube">
                 </div>
             </div>
 
@@ -264,34 +278,34 @@
                         <b class="text-gray-800 font-bold">Location</b>
                     </div>
                     <p class="text-gray-500 text-xl">America</p>
-                    <p class="text-gray-500 text-xl">America</p>
-                    <p class="text-gray-500 text-xl">America</p>
-                    <p class="text-gray-500 text-xl">America</p>
+                    <p class="text-gray-500 text-xl">Asia</p>
+                    <p class="text-gray-500 text-xl">Eroupa</p>
+                    <p class="text-gray-500 text-xl">Africa</p>
                 </div>
                 <div class="flex flex-col space-y-3">
                     <div class="mb-4 text-xl">
-                        <b class="text-gray-800 font-bold">Location</b>
+                        <b class="text-gray-800 font-bold">Contact</b>
                     </div>
-                    <p class="text-gray-500 text-xl">America</p>
-                    <p class="text-gray-500 text-xl">America</p>
-                    <p class="text-gray-500 text-xl">America</p>
-                    <p class="text-gray-500 text-xl">America</p>
+                    <p class="text-gray-500 text-xl">About Me</p>
+                    <p class="text-gray-500 text-xl">Teams</p>
+                    <p class="text-gray-500 text-xl">Profile</p>
+                    <p class="text-gray-500 text-xl">Faq</p>
                 </div>
                 <div class="flex flex-col space-y-3">
                     <div class="mb-4 text-xl">
-                        <b class="text-gray-800 font-bold">Location</b>
+                        <b class="text-gray-800 font-bold">Legals</b>
                     </div>
-                    <p class="text-gray-500 text-xl">America</p>
-                    <p class="text-gray-500 text-xl">America</p>
-                    <p class="text-gray-500 text-xl">America</p>
-                    <p class="text-gray-500 text-xl">America</p>
+                    <p class="text-gray-500 text-xl">Privacy</p>
+                    <p class="text-gray-500 text-xl">Disclaimer</p>
+                    <p class="text-gray-500 text-xl">Terms</p>
+                    <p class="text-gray-500 text-xl">Company</p>
                 </div>
             </div>
         </div>
     </footer>
     <!-- END FOOTER SECTION -->
 
-
+    <script src="./js/script.js"></script>
 
 </body>
 </html>
